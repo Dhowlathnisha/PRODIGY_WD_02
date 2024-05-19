@@ -1,0 +1,53 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #884242;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #86abc4;
+    padding: 40px;
+    margin: 70px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Timer-Display {
+    font-size: 2em;
+    padding: 50px;
+    background-color: #d2dd38;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+#start-timer,#pause-timer,#reset-timer,#lap-timer{
+    padding: 10px 20px;
+    background-color: #3f4b30;
+    color: #f8f6f6;
+    border: none;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#start-timer:hover,#pause-timer:hover,#reset-timer:hover,#lap-timer:hover{
+    background-color: #e6d7d9;
+    color: black;
+}
+ul.laps {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    max-height: 200px; /* Limit maximum height for lap items */
+    overflow-y: auto; /* Add scrollbar if lap items exceed maximum height */
+}
+
+ul.laps li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
